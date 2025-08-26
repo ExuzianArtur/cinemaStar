@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en, ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Roboto-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon%20(4).ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1756211739193"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1756211739193">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header header--dark" id="header" data-header="">
+				<div class="header__container">
+					<div class="logo">
+						<span class="logo__cinema">CinemaStar</span>
+						<span class="logo__c3d">3D</span>
+					</div>
+					<nav class="nav" id="mainNav">
+						<div class="nav__item">
+							<a data-fls-scrollto="#about" href="#" class="nav__link">О нас</a>
+						</div>
+						<div class="nav__item">
+							<a data-fls-scrollto="#movies" href="#" class="nav__link">Фильмы</a>
+						</div>
+						<div class="nav__item">
+							<a data-fls-scrollto=".schedule" href="#schedule" class="nav__link">Расписание</a>
+						</div>
+						<div class="nav__item">
+							<a data-fls-scrollto="#contacts" href="#" class="nav__link">Контакты</a>
+						</div>
+					</nav>
+					<button class="burger" id="burger">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+				</div>
+			</header>
+			<div class="mobile-menu" id="mobileMenu">
+				<button class="close-btn" id="closeBtn"></button>
+				<div class="mobile-menu__items" id="menuItems">
+					<div class="mobile-menu__item">
+						<a data-fls-scrollto="#about" href="#" class="mobile-menu__link">О нас</a>
+					</div>
+					<div class="mobile-menu__item">
+						<a data-fls-scrollto="#movies" href="#" class="mobile-menu__link">Фильмы</a>
+					</div>
+					<div class="mobile-menu__item">
+						<a data-fls-scrollto=".schedule" href="#" class="mobile-menu__link">Расписание</a>
+					</div>
+					<div class="mobile-menu__item">
+						<a data-fls-scrollto="#contacts" href="#" class="mobile-menu__link">Контакты</a>
+					</div>
+				</div>
+				<div class="mobile__social" id="social">
+					<a href="https://vk.com/id271211198" target="_blank" class="mobile-social__link social__link--icon-s-vk"></a>
+					<a href="https://t.me/cinemaStar3d" target="_blank" class="mobile-social__link social__link--icon-s-tg"></a>
+					<a href="https://wa.me/79186142828" class="mobile-social__link social__link--icon-s-wu" target="_blank" title="Написать в WhatsApp" data-phone="79186142828" data-message="Здравствуйте! Хочу получить консультацию юриста."></a>
+				</div>
+			</div>
+			<main class="page page--home">
+				<!-- Кнопка "Наверх" -->
+				<button data-fls-scrollup="" class="scroll-to-top" id="scrollToTop">
+					<div class="--icon-arrow-up"></div>
+				</button>
+				<!-- Плавающая кнопка контактов -->
+				<div data-fls-socialbtn="" class="floating-contact" id="floatingContact">
+					<div class="social-buttons" id="socialButtons">
+						<a href="https://wa.me/79186142828" target="_blank" class="social-btn --icon-s-wu" id="whatsappBtn">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+						<a href="https://t.me/cinemaStar3d" target="_blank" class="social-btn --icon-s-tg" id="telegramBtn"></a>
+					</div>
+					<button class="contact-main-btn animate" id="contactMainBtn">
+						<a href="#" class="contact-main-btn--icon-social-chat"></a>
+						<div class="orbit-container">
+							<div class="orbit-icons">
+								<div class="orbit-icon whatsapp">
+									<div class="--icon-s-wu"></div>
+								</div>
+								<div class="orbit-icon telegram">
+									<div class="--icon-s-tg"></div>
+								</div>
+							</div>
+						</div>
+					</button>
+				</div>
+				<section class="hero" id="hero">
+					<picture>
+						<source media="(max-width: 600px)" srcset="./assets/img/hero_bg-600.avif" type="image/avif">
+						<source media="(max-width: 1200px)" srcset="./assets/img/hero_bg-1200.avif" type="image/avif">
+						<img alt="Кинозал" class="hero__background" src="./assets/img/hero_bg.avif">
+					</picture>
+					<div class="hero__background-text" id="parallaxText">Синема Стар</div>
+					<div class="her0__container">
+						<div class="hero__content">
+							<h1 class="hero__title">
+								Погрузитесь в
+								<span>3D-реальность</span>
+								вместе с нами
+							</h1>
+							<p class="hero__subtitle">
+								Современный кинотеатр с передовой технологией 3D-проекции и объемным звуком.
+          Новинки кино в отличном качестве.
+							</p>
+							<a data-fls-scrollto=".feedback" href="#schedule" class="btn">Связаться с нами</a>
+						</div>
+					</div>
+				</section>
+				<section class="about" id="about">
+					<div class="about__container">
+						<h2 class="section__title" id="section__title">О нас</h2>
+						<div class="about__content">
+							<div class="about__text">
+								<p>
+									CinemaStar 3D - это современный кинотеатр, который предлагает уникальный кинематографический опыт
+            с использованием передовых технологий 3D-проекции и объемного звука Dolby Atmos.
+								</p>
+								<p>
+									Наши залы оборудованы самыми современными проекторами, которые обеспечивают кристально чистое
+            изображение и потрясающие визуальные эффекты.
+								</p>
+								<div class="about__features">
+									<div class="feature">
+										<img src="./assets/img/features/f-3d.svg" alt="Image">
+										<div>
+											<h3 class="feature__title">3D-технологии</h3>
+											<p>Передовая система 3D-проекции для максимального погружения</p>
+										</div>
+									</div>
+									<div class="feature">
+										<img src="./assets/img/features/f-v.svg" alt="Image">
+										<div>
+											<h3 class="feature__title">Объемный звук</h3>
+											<p>Dolby Atmos создает уникальное звуковое пространство</p>
+										</div>
+									</div>
+									<div class="feature">
+										<img src="./assets/img/features/f-armchair.svg" alt="Image">
+										<div>
+											<h3 class="feature__title">Удобные кресла</h3>
+											<p>Эргономичные кресла с регулировкой для максимального комфорта</p>
+										</div>
+									</div>
+									<div class="feature">
+										<img src="./assets/img/features/f-fas.svg" alt="Image">
+										<div>
+											<h3 class="feature__title">VIP-сервис</h3>
+											<p>Доставка попкорна и напитков прямо к вашему креслу</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about__image-container">
+								<div class="about__image-slider" id="imageSlider">
+									<div class="about__image-slide active">
+										<img src="https://images.unsplash.com/photo-1545193957-941a31a48712?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Кинозал 1">
+									</div>
+									<div class="about__image-slide">
+										<img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Кинозал 2">
+									</div>
+									<div class="about__image-slide">
+										<img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Кинозал 3">
+									</div>
+									<div class="about__image-slide">
+										<img src="https://images.unsplash.com/photo-1535776884080-96e0d7f20d6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Кинозал 4">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="movies" id="movies">
+					<div class="movies__container">
+						<div class="movies__background-container">
+							<img src="" alt="Фон фильма" class="movies__background" id="movieBackground">
+						</div>
+						<h2 class="section__title" id="section__title">Афиша фильмов</h2>
+						<div class="carousel-wrapper">
+							<div class="carousel" id="carousel"><!-- Карточки фильмов будут добавлены через JS --></div>
+							<!-- Мобильный слайдер -->
+							<div class="mobile-slider" id="mobileSlider">
+								<div class="mobile-track" id="mobileTrack"></div>
+							</div>
+							<!-- Пагинация под карточками (только для мобильных) -->
+							<div class="pagination" id="pagination"></div>
+						</div>
+					</div>
+				</section>
+				<!-- Модальное окно для десктопа -->
+				<div class="modal" id="movieModal">
+					<div class="modal__content">
+						<button class="modal__close" id="modalClose">&times;</button>
+						<div class="modal__header">
+							<img src="" alt="" class="modal__image" id="modalImage">
+							<div class="modal__header-content">
+								<h2 class="modal__title" id="modalTitle"></h2>
+								<div class="modal__info">
+									<div>
+										Жанр:
+										<span id="modalGenre"></span>
+									</div>
+									<div>
+										Длительность:
+										<span id="modalDuration"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal__body">
+							<p class="modal__description" id="modalDescription"></p>
+							<h3 class="modal__schedule-title">Расписание сеансов</h3>
+							<div class="schedule__list" id="scheduleList"></div>
+						</div>
+					</div>
+				</div>
+				<!-- Мобильное модальное окно (только расписание и цена) -->
+				<div class="modal-mobile" id="movieModalMobile">
+					<div class="modal-mobile__content">
+						<button class="modal-mobile__close" id="modalMobileClose">&times;</button>
+						<div class="modal-mobile__header">
+							<h2 class="modal-mobile__title" id="modalMobileTitle"></h2>
+							<div class="modal-mobile__info" id="modalMobileInfo"></div>
+						</div>
+						<div class="modal-mobile__body">
+							<h3 class="modal-mobile__schedule-title">Расписание сеансов</h3>
+							<div class="modal-mobile__schedule-list" id="mobileScheduleList"></div>
+						</div>
+					</div>
+				</div>
+				<section class="schedule" id="schedule">
+					<div class="container">
+						<h2 class="section__title">Расписание сеансов</h2>
+						<div class="schedule__tabs">
+							<div class="tab active" data-day="today">Сегодня</div>
+							<div class="tab" data-day="tomorrow">Завтра</div>
+							<div class="tab" data-day="weekend">Выходные</div>
+						</div>
+						<div class="schedule__content active" id="today">
+							<div class="movie-list">
+								<div class="movie-item">
+									<div class="movie-item__header">
+										<h3 class="movie-item__title">Аватар: Путь воды</h3>
+										<div class="movie-item__time">
+											<span>12:30</span>
+											<span>15:40</span>
+											<span>18:50</span>
+											<span>21:30</span>
+										</div>
+									</div>
+									<div class="movie-item__body">
+										<div class="movie-item__info">
+											<span>2ч 42м</span>
+										</div>
+										<div class="movie-item__price">от 450 ₽</div>
+									</div>
+								</div>
+								<div class="movie-item">
+									<div class="movie-item__header">
+										<h3 class="movie-item__title">Человек-паук: Нет пути домой</h3>
+										<div class="movie-item__time">
+											<span>13:15</span>
+											<span>16:30</span>
+											<span>19:45</span>
+											<span>22:15</span>
+										</div>
+									</div>
+									<div class="movie-item__body">
+										<div class="movie-item__info">
+											<span>2ч 28м</span>
+										</div>
+										<div class="movie-item__price">от 400 ₽</div>
+									</div>
+								</div>
+								<div class="movie-item">
+									<div class="movie-item__header">
+										<h3 class="movie-item__title">Топ Ган: Мэверик</h3>
+										<div class="movie-item__time">
+											<span>14:00</span>
+											<span>17:15</span>
+											<span>20:30</span>
+										</div>
+									</div>
+									<div class="movie-item__body">
+										<div class="movie-item__info">
+											<span>2ч 10м</span>
+										</div>
+										<div class="movie-item__price">от 350 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="schedule__content" id="tomorrow">
+							<div class="movie-list">
+								<div class="movie-item">
+									<div class="movie-item__header">
+										<h3 class="movie-item__title">Бэтмен</h3>
+										<div class="movie-item__time">
+											<span>12:00</span>
+											<span>15:15</span>
+											<span>18:30</span>
+											<span>21:45</span>
+										</div>
+									</div>
+									<div class="movie-item__body">
+										<div class="movie-item__info">
+											<span>2ч 56м</span>
+										</div>
+										<div class="movie-item__price">от 420 ₽</div>
+									</div>
+								</div>
+								<div class="movie-item">
+									<div class="movie-item__header">
+										<h3 class="movie-item__title">Доктор Стрэндж: В мультивселенной безумия</h3>
+										<div class="movie-item__time">
+											<span>13:30</span>
+											<span>16:45</span>
+											<span>20:00</span>
+										</div>
+									</div>
+									<div class="movie-item__body">
+										<div class="movie-item__info">
+											<span>2ч 6м</span>
+										</div>
+										<div class="movie-item__price">от 400 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="schedule__content" id="weekend">
+							<div class="movie-list">
+								<div class="movie-item">
+									<div class="movie-item__header">
+										<h3 class="movie-item__title">Чёрная Пантера: Ваканда навеки</h3>
+										<div class="movie-item__time">
+											<span>14:30</span>
+											<span>17:45</span>
+											<span>21:00</span>
+										</div>
+									</div>
+									<div class="movie-item__body">
+										<div class="movie-item__info">
+											<span>2ч 41м</span>
+										</div>
+										<div class="movie-item__price">от 430 ₽</div>
+									</div>
+								</div>
+								<div class="movie-item">
+									<div class="movie-item__header">
+										<h3 class="movie-item__title">Джон Уик 4</h3>
+										<div class="movie-item__time">
+											<span>12:45</span>
+											<span>16:00</span>
+											<span>19:15</span>
+											<span>22:30</span>
+										</div>
+									</div>
+									<div class="movie-item__body">
+										<div class="movie-item__info">
+											<span>2ч 49м</span>
+										</div>
+										<div class="movie-item__price">от 380 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="contacts" id="contacts">
+					<div class="container">
+						<h2 class="section__title">Контакты</h2>
+						<div class="contacts__content">
+							<div class="contacts__info">
+								<div class="contact-item">
+									<img src="./assets/svgicons/contact/home.svg" class="contact-item__icon" alt="Image">
+									<div>
+										<h3 class="contact-item__title">Адрес</h3>
+										<p>354200 г. Сочи, Лазаревское, ул. Победы, 31</p>
+									</div>
+								</div>
+								<div class="contact-item">
+									<img src="./assets/svgicons/contact/telephone.svg" class="contact-item__icon" alt="Image">
+									<div>
+										<h3 class="contact-item__title">Телефон</h3>
+										<a href="https://wa.me/79186142828" target="_blank" title="Написать в WhatsApp" data-phone="79186142828" data-message="Здравствуйте! Хочу получить консультацию юриста.">79186142828</a>
+									</div>
+								</div>
+								<div class="contact-item">
+									<img src="./assets/svgicons/contact/mail.svg" class="contact-item__icon" alt="Image">
+									<div>
+										<h3 class="contact-item__title">Email</h3>
+										<p>cinemastar2014@bk.ru</p>
+									</div>
+								</div>
+								<div class="contact-item">
+									<img src="./assets/svgicons/contact/clock.svg" class="contact-item__icon" alt="Image">
+									<div>
+										<h3 class="contact-item__title">Режим работы</h3>
+										<p>Ежедневно с 10:00 до 24:00</p>
+									</div>
+								</div>
+								<!-- Форма для ввода координат -->
+								<div class="coordinates-form">
+									<h4 class="coordinates-form__title">Ввести координаты для карты</h4>
+									<div class="coordinates-form__group">
+										<input type="text" class="coordinates-form__input" id="latitude" placeholder="Широта (например: 43.630000)">
+										<input type="text" class="coordinates-form__input" id="longitude" placeholder="Долгота (например: 39.660000)">
+									</div>
+									<button class="coordinates-form__button" id="updateMapBtn">Обновить карту</button>
+								</div>
+							</div>
+							<div class="map">
+								<div id="map"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="feedback" id="feedback">
+					<div class="container">
+						<h2 class="section__title">Обратная связь</h2>
+						<form class="form" id="feedbackForm">
+							<div class="form-message" id="formMessage"></div>
+							<div class="form__group">
+								<label for="name" class="form__label">Ваше имя</label>
+								<input type="text" id="name" class="form__input" placeholder="Введите ваше имя" required>
+							</div>
+							<div class="form__group">
+								<label for="email" class="form__label">Email</label>
+								<input type="email" id="email" class="form__input" placeholder="Введите ваш email" required>
+							</div>
+							<div class="form__group">
+								<label for="phone" class="form__label">Телефон</label>
+								<input type="tel" id="phone" class="form__input" placeholder="Введите ваш телефон">
+							</div>
+							<div class="form__group">
+								<label for="message" class="form__label">Сообщение</label>
+								<textarea id="message" class="form__textarea" placeholder="Введите ваше сообщение" required></textarea>
+							</div>
+							<button type="submit" class="feedback-form__btn">Отправить сообщение</button>
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="container">
+					<div class="footer__content">
+						<div class="footer__logo">
+							<div class="footer-logo__content">
+								<div class="logo__text">
+									CINEMASTAR
+									<span class="logo-text__c3d">3D</span>
+								</div>
+							</div>
+							<p>Современный кинотеатр с передовыми технологиями 3D-проекции и объемным звуком.</p>
+						</div>
+						<div class="footer__nav">
+							<h3>Навигация</h3>
+							<ul>
+								<li>
+									<a data-fls-scrollto="#about" href="#about">О нас</a>
+								</li>
+								<li>
+									<a data-fls-scrollto="#schedule" href="#schedule">Расписание</a>
+								</li>
+								<li>
+									<a data-fls-scrollto="#contacts" href="#contacts">Контакты</a>
+								</li>
+								<li>
+									<a data-fls-scrollto="#feedback" href="#feedback">Обратная связь</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__contacts">
+							<h3>Контакты</h3>
+							<div class="contact-item">
+								<a href="tel:+79186142828">+7(918) 614-28-28</a>
+							</div>
+							<div class="contact-item">
+								<a href="mailto:cinemastar2014@bk.ru">cinemastar2014@bk.ru</a>
+							</div>
+							<div class="contact-item">
+								<p>
+									354200, г. Сочи,
+									<br>
+									Лазаревское, ул. Победы, 31
+								</p>
+							</div>
+						</div>
+						<div class="footer__social">
+							<h3>Мы в соцсетях</h3>
+							<ul class="social__list">
+								<li>
+									<a href="https://vk.com/id271211198" target="_blank" class="social__link social__link--icon-s-vk"></a>
+								</li>
+								<li>
+									<a href="https://t.me/cinemaStar3d" target="_blank" class="social__link social__link--icon-s-tg"></a>
+								</li>
+								<li>
+									<a href="https://wa.me/79186142828" class="social__link social__link--icon-s-wu" target="_blank" title="Написать в WhatsApp" data-phone="79186142828" data-message="Здравствуйте! Хочу получить консультацию юриста."></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						<p>&copy;2017 Copyright, кинотеатр CinemaStar</p>
+						<p>354200 г. Сочи, Лазаревское, ул. Победы, 31</p>
+						<p>тел.: +7(918) 614-28-28</p>
+						<div class="">
+							E-mail:
+							<a href="mailto:cinemastar2014@bk.ru" style="color: #8a2be2;">cinemastar2014@bk.ru</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
